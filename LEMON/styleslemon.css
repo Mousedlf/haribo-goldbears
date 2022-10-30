@@ -1,0 +1,699 @@
+@import url(../reset.css);
+@import url(.//db.onlinewebfonts.com/c/6e639fb04623b52d8f8dce38d80ad84a?family=BPreplay);
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;700;900&display=swap');
+
+/* POLICES:
+Kanit Regular 400
+Kanit Bold 700
+Kanit Black 900
+Bpreplay ?
+
+COULEURS:
+vert foncé #419D75
+vert clair #5BAC34
+vert bouton #017D47
+doré #BD8E1D
+
+*/
+
+body {
+    max-width: 100vw;
+    font-family: 'BPreplay', sans-serif;
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+
+/*Titles*/
+
+.title--kanit-banderole {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #BD8E1D;
+    font-size: 4vw;
+}
+
+.title--kanit-banderole-small {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #BD8E1D;
+    font-size: 3vw;
+}
+
+.title--bpreplay {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #BD8E1D;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.title--bpreplay-black-small {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.title--kanit-uppercase {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #BD8E1D;
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.title--kanit-lowercase {
+    color: #BD8E1D;
+    font-size: 1.875rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 80rem) {
+    .title--kanit-lowercase {
+        padding-bottom: 0;
+    }
+}
+
+
+/*Boutons*/
+
+.btn__shop--mini {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #EEE300;
+    border-radius: 20px;
+    padding: 8px 15px;
+    height: auto;
+    margin: 0 2rem;
+}
+
+.btn__shop--small {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #EEE300;
+    border: solid 2px #EEE300;
+    border-radius: 20px;
+    padding: 8px 30px;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.btn__shop--big {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    background-color: #EEE300;
+    border: solid 2px #EEE300;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+}
+
+.multibear {
+    width: 50px;
+}
+
+
+/* SECTION 1  */
+
+
+/*Navigation*/
+
+.navigation {
+    width: 95%;
+    max-width: 100vw;
+    padding-top: 1rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    /*position problème, margin n'agit plus*/
+    z-index: 42;
+}
+
+.navigation__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation__brandname {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2.8125rem;
+    text-transform: uppercase;
+    color: #BD8E1D;
+    -webkit-text-stroke: 0.25px white;
+    text-shadow: -3px 3px 5px rgb(167, 167, 167);
+}
+
+
+/*Hero*/
+
+.section1 {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+
+@media (min-width: 80rem) {
+    .section1 {
+        height: 90vh;
+    }
+}
+
+.section1__fruitname {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24vw;
+    text-align: center;
+    line-height: 75%;
+    color: #F6EC1A;
+    padding-top: 10%
+    /*padding comme solution nulle*/
+}
+
+.section1--ensemble-ours {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.section1--grand-ours {
+    max-height: 220px;
+}
+
+.section1--medium-ours {
+    max-height: 165px;
+}
+
+.section1--petit-ours {
+    max-height: 100px;
+}
+
+@media (min-width: 80rem) {
+    .section1--grand-ours {
+        max-height: 380px;
+    }
+    .section1--medium-ours {
+        max-height: 290px;
+    }
+    .section1--petit-ours {
+        max-height: 240px;
+    }
+}
+
+
+/* Bounce */
+
+@keyframes bounce {
+    0% {
+        top: 0;
+        animation-timing-function: ease-out;
+    }
+    25% {
+        top: -150px;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        top: 0px;
+    }
+    75% {
+        top: -15px;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.bounce {
+    position: relative;
+    float: left;
+    margin-right: 5px;
+}
+
+.bounce.animated {
+    animation: bounce 1s;
+}
+
+
+/* Banderole */
+
+.section_contenu-defilant {
+    margin-bottom: 7rem;
+}
+
+.banderole {
+    color: white;
+    text-transform: uppercase;
+    bottom: 0px;
+    max-width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+@media (min-width: 80rem) {
+    .banderole {
+        height: 10vh;
+    }
+}
+
+.banderole_contenu_défilant {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: defilement-rtl 25s infinite linear;
+}
+
+.banderole_contenu_défilant>img {
+    padding: 0px 1.5rem;
+    height: 5vh;
+}
+
+@keyframes defilement-rtl {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+
+/* SECTION 2:  */
+
+
+/* S2 100th anniversary*/
+
+.section2__contenu {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7rem
+}
+
+.section2__contenu>img {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 3rem
+}
+
+.section2__contenu__text {
+    margin: auto 0;
+}
+
+@media (min-width: 80rem) {
+    .section2__contenu {
+        flex-direction: row;
+        width: 75%;
+    }
+    .section2__contenu>img {
+        margin: 0 0;
+    }
+    .section2__contenu__text {
+        margin: auto 0;
+        padding-left: 3rem;
+    }
+}
+
+
+/* SECTION 3: Jeu memory */
+
+.section3 {
+    font-family: 'BPreplay', sans-serif;
+    color: #BD8E1D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.s3__title {
+    text-align: center;
+    width: 75%;
+}
+
+@media (min-width: 80rem) {
+    .section3 {
+        flex-direction: row;
+        width: 100%
+    }
+    .s3__title {
+        padding-right: 3rem;
+        text-align: right;
+        width: 20%
+    }
+}
+
+.image-loupe {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.image-loupe>img {
+    width: 30vw;
+}
+
+@media (min-width: 80rem) {
+    .image-loupe>img {
+        width: 20vw;
+    }
+}
+
+
+/*S3 Jeu*/
+
+.ensemble_cases {
+    display: flex;
+}
+
+.case {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 40px;
+    perspective: 1000px;
+    padding: 10px 10px;
+}
+
+@media (min-width: 80rem) {
+    .case {
+        width: 10vw;
+        height: 15vh;
+    }
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 40px;
+    text-align: center;
+    transition: transform 1s ease-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.case:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #EEE300;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-back {
+    background-image: linear-gradient(#E6BC45, #F4DEA3, #E6BC45);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 80rem) {
+    .case {
+        width: 10vw;
+        height: 15vh;
+    }
+    .flip-card-inner {
+        width: 10vw;
+        height: 15vh;
+    }
+    .flip-card-front,
+    .flip-card-back {
+        width: 10vw;
+        height: 15vh;
+    }
+}
+
+
+/* SECTION 4: Fun fact */
+
+.section4 {
+    width: 100%;
+    background-color: #fbf68c;
+    position: relative;
+    margin-bottom: 7rem
+}
+
+.section4__text {
+    width: 50%;
+    margin-left: 7%;
+    padding: 2rem 2rem
+}
+
+.section4__visuel {
+    position: absolute;
+    bottom: 0;
+    left: 64%;
+    max-height: 220px;
+}
+
+@media (min-width: 80rem) {
+    .section4__text {
+        width: 40%;
+        margin-left: 20%
+    }
+}
+
+
+/* SECTION 5: Scratch ticket */
+
+@media (min-width: 0rem) {
+    .section5__FSH,
+    .section5__20,
+    .section5__30,
+    .section5__FS {
+        display: none;
+    }
+}
+
+@media (min-width: 48rem) {
+    .section5__20,
+    .section5__30 {
+        display: block;
+    }
+}
+
+@media (min-width: 80rem) {
+    .section5__FSH,
+    .section5__FS {
+        display: block;
+    }
+}
+
+.section5 {
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section5_gummis-et-ticket {
+    position: relative;
+}
+
+.section5__FSH {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: -20rem;
+    bottom: 0;
+}
+
+.section5__20 {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: -10rem;
+    bottom: 0;
+}
+
+.section5__30 {
+    position: absolute;
+    width: 55%;
+    height: auto;
+    left: 25rem;
+    bottom: 0;
+}
+
+.section5__FS {
+    position: absolute;
+    width: 45%;
+    height: auto;
+    left: 34rem;
+    bottom: 0;
+}
+
+.section5__goldenticket {
+    background-image: url(./images/goldenticket.jpg);
+    height: 450px;
+    width: 400px;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.section5__goldenticket:hover {
+    opacity: 0;
+}
+
+.section5__ticketwin {
+    position: absolute;
+    top: 0;
+    background-image: url(./images/ticket_win.jpg);
+    height: 450px;
+    width: 400px;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+
+/* SECTION 6: Shop now + other flavours */
+
+.section6 {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.section6__btn {
+    position: relative;
+}
+
+.section6__btngummy {
+    position: absolute;
+    transform: rotate(180deg);
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.btn__shop--big:hover+.section6__btngummy {
+    top: 2rem;
+}
+
+
+/*S6 Shop now*/
+
+.section6__shopnow {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+
+/*S6 Other gummies*/
+
+.section6__othergummy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+@media (min-width: 80rem) {
+    .section6__othergummy {
+        flex-direction: row;
+    }
+}
+
+
+/* FOOTER*/
+
+footer {
+    text-align: center;
+    overflow: hidden;
+    font-size: 1vw;
+}
+
+.footer__bloc {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__contenu {
+    position: absolute;
+    width: 25%;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    bottom: 0;
+    margin-bottom: 4rem;
+}
+
+.footer__bloc>img {
+    width: 100vw;
+}
+
+.footer_trademark {
+    position: absolute;
+    width: 25%;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
